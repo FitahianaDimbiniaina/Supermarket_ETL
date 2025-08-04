@@ -1,0 +1,1560 @@
+2025-07-16 17:54:06,518 - INFO - Starting analysis: top_10_sales_by_region
+2025-07-16 17:54:06,824 - ERROR - Export failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2025-07-16 17:54:06,825 - ERROR - Error processing top_10_sales_by_region: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 161, in run_analysis
+    export_data(df, query_name, 'parquet')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 81, in export_data
+    df.to_parquet(export_path)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\core\frame.py", line 3118, in to_parquet
+    return to_parquet(
+        self,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\parquet.py", line 478, in to_parquet
+    impl = get_engine(engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\parquet.py", line 68, in get_engine
+    raise ImportError(
+    ...<7 lines>...
+    )
+ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2025-07-16 17:54:06,854 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-16 17:54:06,953 - ERROR - Export failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2025-07-16 17:54:06,954 - ERROR - Error processing top_10_products_by_quantity: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 161, in run_analysis
+    export_data(df, query_name, 'parquet')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 81, in export_data
+    df.to_parquet(export_path)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\core\frame.py", line 3118, in to_parquet
+    return to_parquet(
+        self,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\parquet.py", line 478, in to_parquet
+    impl = get_engine(engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\parquet.py", line 68, in get_engine
+    raise ImportError(
+    ...<7 lines>...
+    )
+ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2025-07-16 17:54:06,955 - INFO - Starting analysis: top_10_products_by_region_limited
+2025-07-16 17:54:07,110 - ERROR - Export failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2025-07-16 17:54:07,110 - ERROR - Error processing top_10_products_by_region_limited: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 161, in run_analysis
+    export_data(df, query_name, 'parquet')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 81, in export_data
+    df.to_parquet(export_path)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\core\frame.py", line 3118, in to_parquet
+    return to_parquet(
+        self,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\parquet.py", line 478, in to_parquet
+    impl = get_engine(engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\parquet.py", line 68, in get_engine
+    raise ImportError(
+    ...<7 lines>...
+    )
+ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2025-07-16 17:54:07,112 - INFO - Starting correlation analysis
+2025-07-16 17:54:07,112 - ERROR - Error in correlation analysis: [Errno 2] No such file or directory: 'D:\\Projects\\ETL\\supermarket_etl_project\\sql\\correlation_purchase_recurrence.sql'
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 201, in correlation_category_recurrence
+    with open(sql_path, 'r', encoding='utf-8') as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Projects\\ETL\\supermarket_etl_project\\sql\\correlation_purchase_recurrence.sql'
+2025-07-16 17:57:53,347 - INFO - Starting analysis: top_10_sales_by_region
+2025-07-16 17:57:53,630 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_sales_by_region.parquet
+2025-07-16 17:57:54,048 - ERROR - Error processing top_10_sales_by_region: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-07-16 17:57:54,067 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-16 17:57:54,188 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_quantity.parquet
+2025-07-16 17:57:54,190 - ERROR - Error processing top_10_products_by_quantity: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 167, in run_analysis
+    fig = create_products_by_quantity_plot(df)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 114, in create_products_by_quantity_plot
+    fig = px.bar(
+        df,
+    ...<6 lines>...
+        hover_data=['code', 'total_qty', 'product_name']
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_chart_types.py", line 381, in bar
+    return make_figure(
+        args=locals(),
+    ...<2 lines>...
+        layout_patch=dict(barmode=barmode),
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 2491, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1737, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        args,
+        ^^^^^
+    ...<4 lines>...
+        native_namespace,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1338, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+2025-07-16 17:57:54,214 - INFO - Starting analysis: top_10_products_by_region_limited
+2025-07-16 17:57:54,379 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_region_limited.parquet
+2025-07-16 17:57:54,451 - ERROR - Error processing top_10_products_by_region_limited: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-07-16 17:57:54,452 - INFO - Starting correlation analysis
+2025-07-16 17:57:54,452 - ERROR - Error extracting SQL block: Query block 'correlation_category_recurrence' not found.
+2025-07-16 17:57:54,453 - ERROR - Error in correlation analysis: Query block 'correlation_category_recurrence' not found.
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 199, in correlation_category_recurrence
+    query = extract_sql_block(SQL_DIR / 'olap_queries.sql', 'correlation_category_recurrence')
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 43, in extract_sql_block
+    raise ValueError(f"Query block '{block_name}' not found.")
+ValueError: Query block 'correlation_category_recurrence' not found.
+2025-07-16 17:58:26,271 - INFO - Starting analysis: top_10_sales_by_region
+2025-07-16 17:58:26,481 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_sales_by_region.parquet
+2025-07-16 17:58:26,596 - ERROR - Error processing top_10_sales_by_region: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-07-16 17:58:26,599 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-16 17:58:26,715 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_quantity.parquet
+2025-07-16 17:58:26,717 - ERROR - Error processing top_10_products_by_quantity: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 167, in run_analysis
+    fig = create_products_by_quantity_plot(df)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 114, in create_products_by_quantity_plot
+    fig = px.bar(
+        df,
+    ...<6 lines>...
+        hover_data=['code', 'total_qty', 'product_name']
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_chart_types.py", line 381, in bar
+    return make_figure(
+        args=locals(),
+    ...<2 lines>...
+        layout_patch=dict(barmode=barmode),
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 2491, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1737, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        args,
+        ^^^^^
+    ...<4 lines>...
+        native_namespace,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1338, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+2025-07-16 17:58:26,721 - INFO - Starting analysis: top_10_products_by_region_limited
+2025-07-16 17:58:26,895 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_region_limited.parquet
+2025-07-16 17:58:26,980 - ERROR - Error processing top_10_products_by_region_limited: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-07-16 17:58:26,981 - INFO - Starting correlation analysis
+2025-07-16 17:58:26,981 - ERROR - Error extracting SQL block: Query block 'correlation_category_recurrence' not found.
+2025-07-16 17:58:26,982 - ERROR - Error in correlation analysis: Query block 'correlation_category_recurrence' not found.
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 199, in correlation_category_recurrence
+    query = extract_sql_block(SQL_DIR / 'olap_queries.sql', 'correlation_category_recurrence')
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 43, in extract_sql_block
+    raise ValueError(f"Query block '{block_name}' not found.")
+ValueError: Query block 'correlation_category_recurrence' not found.
+2025-07-16 17:58:55,830 - INFO - Starting analysis: top_10_sales_by_region
+2025-07-16 17:58:56,044 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_sales_by_region.parquet
+2025-07-16 17:58:56,159 - ERROR - Error processing top_10_sales_by_region: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-07-16 17:58:56,161 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-16 17:58:56,274 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_quantity.parquet
+2025-07-16 17:58:56,276 - ERROR - Error processing top_10_products_by_quantity: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 167, in run_analysis
+    fig = create_products_by_quantity_plot(df)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 114, in create_products_by_quantity_plot
+    fig = px.bar(
+        df,
+    ...<6 lines>...
+        hover_data=['code', 'total_qty', 'product_name']
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_chart_types.py", line 381, in bar
+    return make_figure(
+        args=locals(),
+    ...<2 lines>...
+        layout_patch=dict(barmode=barmode),
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 2491, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1737, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        args,
+        ^^^^^
+    ...<4 lines>...
+        native_namespace,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1338, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+2025-07-16 17:58:56,280 - INFO - Starting analysis: top_10_products_by_region_limited
+2025-07-16 17:58:56,454 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_region_limited.parquet
+2025-07-16 17:58:56,533 - ERROR - Error processing top_10_products_by_region_limited: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-07-16 17:58:56,534 - INFO - Starting correlation analysis
+2025-07-16 17:58:56,537 - ERROR - Error in correlation analysis: (psycopg2.errors.SyntaxError) unterminated quoted string at or near "'
+SELECT
+    dc.client_id,
+    dp.categorie,
+    COUNT(DISTINCT dt.date) AS purchase_days
+FROM fact_ventes fv
+JOIN dim_client dc ON fv.client_id = dc.client_id
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dc.client_id, dp.categorie"
+LINE 1: '
+        ^
+
+[SQL: '
+SELECT
+    dc.client_id,
+    dp.categorie,
+    COUNT(DISTINCT dt.date) AS purchase_days
+FROM fact_ventes fv
+JOIN dim_client dc ON fv.client_id = dc.client_id
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dc.client_id, dp.categorie]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: unterminated quoted string at or near "'
+SELECT
+    dc.client_id,
+    dp.categorie,
+    COUNT(DISTINCT dt.date) AS purchase_days
+FROM fact_ventes fv
+JOIN dim_client dc ON fv.client_id = dc.client_id
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dc.client_id, dp.categorie"
+LINE 1: '
+        ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 200, in correlation_category_recurrence
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) unterminated quoted string at or near "'
+SELECT
+    dc.client_id,
+    dp.categorie,
+    COUNT(DISTINCT dt.date) AS purchase_days
+FROM fact_ventes fv
+JOIN dim_client dc ON fv.client_id = dc.client_id
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dc.client_id, dp.categorie"
+LINE 1: '
+        ^
+
+[SQL: '
+SELECT
+    dc.client_id,
+    dp.categorie,
+    COUNT(DISTINCT dt.date) AS purchase_days
+FROM fact_ventes fv
+JOIN dim_client dc ON fv.client_id = dc.client_id
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dc.client_id, dp.categorie]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-16 18:00:59,431 - INFO - Starting analysis: top_10_sales_by_region
+2025-07-16 18:00:59,648 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_sales_by_region.parquet
+2025-07-16 18:00:59,985 - INFO - Chromium init'ed with kwargs {}
+2025-07-16 18:01:00,027 - ERROR - Error processing top_10_sales_by_region: 
+
+Kaleido requires Google Chrome to be installed.
+
+Either download and install Chrome yourself following Google's instructions for your operating system,
+or install it from your terminal by running:
+
+    $ plotly_get_chrome
+
+choreographer.browsers.chromium.ChromeNotFoundError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 380, in to_image
+    img_bytes = kaleido.calc_fig_sync(
+        fig_dict,
+    ...<7 lines>...
+        kopts=kopts,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 145, in calc_fig_sync
+    return _async_thread_run(calc_fig, args=args, kwargs=kwargs)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 138, in _async_thread_run
+    raise res
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 129, in run
+    q.put(asyncio.run(func(*args, **kwargs)))
+          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 54, in calc_fig
+    async with Kaleido(**kopts) as k:
+               ~~~~~~~^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\kaleido.py", line 128, in __init__
+    raise ChromeNotFoundError(
+    ...<4 lines>...
+    ) from ChromeNotFoundError
+choreographer.browsers.chromium.ChromeNotFoundError: Kaleido v1 and later requires Chrome to be installed. To install Chrome, use the CLI command `kaleido_get_chrome`, or from Python, use either `kaleido.get_chrome()` or `kaleido.get_chrome_sync()`.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 392, in to_image
+    raise RuntimeError(PLOTLY_GET_CHROME_ERROR_MSG)
+RuntimeError: 
+
+Kaleido requires Google Chrome to be installed.
+
+Either download and install Chrome yourself following Google's instructions for your operating system,
+or install it from your terminal by running:
+
+    $ plotly_get_chrome
+
+
+2025-07-16 18:01:00,032 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-16 18:01:00,137 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_quantity.parquet
+2025-07-16 18:01:00,138 - ERROR - Error processing top_10_products_by_quantity: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 167, in run_analysis
+    fig = create_products_by_quantity_plot(df)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 114, in create_products_by_quantity_plot
+    fig = px.bar(
+        df,
+    ...<6 lines>...
+        hover_data=['code', 'total_qty', 'product_name']
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_chart_types.py", line 381, in bar
+    return make_figure(
+        args=locals(),
+    ...<2 lines>...
+        layout_patch=dict(barmode=barmode),
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 2491, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1737, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        args,
+        ^^^^^
+    ...<4 lines>...
+        native_namespace,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\express\_core.py", line 1338, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'hover_data_2' is not the name of a column in 'data_frame'. Expected one of ['code', 'total_qty'] but received: product_name
+2025-07-16 18:01:00,141 - INFO - Starting analysis: top_10_products_by_region_limited
+2025-07-16 18:01:00,293 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\top_10_products_by_region_limited.parquet
+2025-07-16 18:01:00,371 - INFO - Chromium init'ed with kwargs {}
+2025-07-16 18:01:00,412 - ERROR - Error processing top_10_products_by_region_limited: 
+
+Kaleido requires Google Chrome to be installed.
+
+Either download and install Chrome yourself following Google's instructions for your operating system,
+or install it from your terminal by running:
+
+    $ plotly_get_chrome
+
+choreographer.browsers.chromium.ChromeNotFoundError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 380, in to_image
+    img_bytes = kaleido.calc_fig_sync(
+        fig_dict,
+    ...<7 lines>...
+        kopts=kopts,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 145, in calc_fig_sync
+    return _async_thread_run(calc_fig, args=args, kwargs=kwargs)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 138, in _async_thread_run
+    raise res
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 129, in run
+    q.put(asyncio.run(func(*args, **kwargs)))
+          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\__init__.py", line 54, in calc_fig
+    async with Kaleido(**kopts) as k:
+               ~~~~~~~^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\kaleido\kaleido.py", line 128, in __init__
+    raise ChromeNotFoundError(
+    ...<4 lines>...
+    ) from ChromeNotFoundError
+choreographer.browsers.chromium.ChromeNotFoundError: Kaleido v1 and later requires Chrome to be installed. To install Chrome, use the CLI command `kaleido_get_chrome`, or from Python, use either `kaleido.get_chrome()` or `kaleido.get_chrome_sync()`.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analyse.py", line 185, in run_analysis
+    fig.write_image(img_path, scale=2)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\basedatatypes.py", line 3895, in write_image
+    return pio.write_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 510, in write_image
+    img_data = to_image(
+        fig,
+    ...<5 lines>...
+        engine=engine,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\plotly\io\_kaleido.py", line 392, in to_image
+    raise RuntimeError(PLOTLY_GET_CHROME_ERROR_MSG)
+RuntimeError: 
+
+Kaleido requires Google Chrome to be installed.
+
+Either download and install Chrome yourself following Google's instructions for your operating system,
+or install it from your terminal by running:
+
+    $ plotly_get_chrome
+
+
+2025-07-16 18:01:00,415 - INFO - Starting correlation analysis
+2025-07-16 18:01:00,928 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\correlation_category_recurrence.csv
+2025-07-16 18:01:01,825 - INFO - Correlation analysis completed in 1.41 seconds. Output saved to D:\Projects\ETL\supermarket_etl_project\exports\correlation_category_recurrence.png
+2025-07-16 18:26:33,503 - INFO - Running: top_10_sales_by_region
+2025-07-16 18:30:47,134 - INFO - Running: top_10_sales_by_region
+2025-07-16 18:30:47,429 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_sales_by_region.parquet
+2025-07-16 18:30:47,878 - INFO - Exported top_10_sales_by_region.png
+2025-07-16 18:30:47,879 - INFO - Running: top_10_products_by_quantity
+2025-07-16 18:30:48,175 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+2025-07-16 18:30:48,607 - INFO - Exported top_10_products_by_quantity.png
+2025-07-16 18:30:48,608 - INFO - Running: top_10_products_by_region_limited
+2025-07-16 18:30:48,983 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_region_limited.parquet
+2025-07-16 18:30:49,691 - INFO - Exported top_10_products_by_region_limited.png
+2025-07-16 18:30:49,692 - INFO - Running: correlation_category_recurrence
+2025-07-16 18:30:50,509 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\correlation_category_recurrence.csv
+2025-07-16 18:30:51,274 - INFO - Exported correlation_category_recurrence.png
+2025-07-16 18:34:19,656 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-16 18:34:19,889 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.csv
+2025-07-16 18:34:19,910 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+2025-07-16 18:34:19,910 - ERROR - Error in top_10_products_by_quantity analysis: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\style\core.py", line 129, in use
+    style = _rc_params_in_file(style)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 903, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+         ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 880, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'seaborn'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 29, in run
+    plt.style.use('seaborn')
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\style\core.py", line 131, in use
+    raise OSError(
+    ...<2 lines>...
+        f"styles are listed in `style.available`)") from err
+OSError: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-07-22 11:28:10,071 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 11:28:10,248 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.csv
+2025-07-22 11:28:10,435 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+2025-07-22 11:28:10,435 - ERROR - Error in top_10_products_by_quantity analysis: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\style\core.py", line 129, in use
+    style = _rc_params_in_file(style)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 903, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+         ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 880, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'seaborn'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 35, in run
+    plt.style.use('seaborn')
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\style\core.py", line 131, in use
+    raise OSError(
+    ...<2 lines>...
+        f"styles are listed in `style.available`)") from err
+OSError: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-07-22 11:29:51,484 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 11:29:51,680 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.csv
+2025-07-22 11:29:51,700 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+2025-07-22 11:29:51,700 - ERROR - Error in top_10_products_by_quantity analysis: 'seaborn-darkgrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\style\core.py", line 129, in use
+    style = _rc_params_in_file(style)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 903, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+         ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 880, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'seaborn-darkgrid'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 36, in run
+    plt.style.use('seaborn-darkgrid')  # use valid matplotlib style
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\matplotlib\style\core.py", line 131, in use
+    raise OSError(
+    ...<2 lines>...
+        f"styles are listed in `style.available`)") from err
+OSError: 'seaborn-darkgrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-07-22 11:31:10,080 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 11:31:10,240 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.csv
+2025-07-22 11:31:10,258 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+2025-07-22 11:31:11,251 - INFO - Analysis completed in 1.17 seconds
+  - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.csv
+  - Parquet exported to: D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+  - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-22 11:33:06,986 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 11:33:07,168 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.csv
+2025-07-22 11:33:07,190 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+2025-07-22 11:33:08,042 - INFO - Analysis completed in 1.06 seconds
+  - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.csv
+  - Parquet exported to: D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_products_by_quantity.parquet
+  - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-22 11:35:41,939 - INFO - Running: top_10_sales_by_region
+2025-07-22 11:36:37,285 - INFO - Running: top_10_sales_by_region
+2025-07-22 11:36:37,444 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_sales_by_region.parquet
+2025-07-22 11:37:37,373 - INFO - Running: top_10_sales_by_region
+2025-07-22 11:37:37,535 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_sales_by_region.parquet
+2025-07-22 11:37:37,977 - INFO - Exported top_10_sales_by_region.png
+2025-07-22 11:38:42,857 - INFO - Running: top_10_sales_by_region
+2025-07-22 11:39:07,254 - INFO - Running: top_10_sales_by_region
+2025-07-22 11:39:30,550 - INFO - Running: top_10_sales_by_region
+2025-07-22 11:40:12,735 - INFO - Running: top_10_sales_by_region
+2025-07-22 11:40:12,941 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\top_10_sales_by_region.parquet
+2025-07-22 11:40:13,386 - INFO - Exported top_10_sales_by_region.png
+2025-07-22 11:53:34,239 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 11:53:59,131 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 11:53:59,175 - ERROR - Error extracting SQL block: Query block 'top_10_products_by_quantity_in_region' not found in D:\Projects\ETL\supermarket_etl_project\sql\olap_queries.sql
+2025-07-22 11:54:18,934 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 11:56:50,111 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 11:56:52,194 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-22 12:02:07,909 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 12:02:08,513 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-22 12:04:12,618 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 12:04:12,852 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\20250722_120412\top_10_products_West.csv
+2025-07-22 12:04:13,182 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\20250722_120413\top_10_products_Central.csv
+2025-07-22 12:04:13,256 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\20250722_120413\top_10_products_East.csv
+2025-07-22 12:04:13,314 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-22 12:04:38,331 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 12:04:38,500 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\20250722_120438\top_10_products_West.csv
+2025-07-22 12:04:38,812 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\20250722_120438\top_10_products_Central.csv
+2025-07-22 12:04:38,883 - INFO - Data exported to D:\Projects\ETL\supermarket_etl_project\exports\csv\20250722_120438\top_10_products_East.csv
+2025-07-22 12:04:38,932 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-22 12:06:37,106 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 12:06:37,283 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-06-37\top_10_products_West.csv
+2025-07-22 12:06:37,629 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-06-37\top_10_products_Central.csv
+2025-07-22 12:06:37,752 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-06-37\top_10_products_East.csv
+2025-07-22 12:06:37,837 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-22 12:06:54,701 - INFO - Running: top_10_products_per_top_regions
+2025-07-22 12:06:54,889 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-06-54\top_10_products_West.csv
+2025-07-22 12:06:55,237 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-06-55\top_10_products_Central.csv
+2025-07-22 12:06:55,303 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-06-55\top_10_products_East.csv
+2025-07-22 12:06:55,351 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-22 12:07:36,376 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 12:07:36,525 - ERROR - Error in top_10_products_by_quantity analysis: (psycopg2.errors.SyntaxError) syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+[SQL: _in_region
+SELECT dp.libelle AS product_name, SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+WHERE dm."Region" = :region
+GROUP BY dp.libelle
+ORDER BY total_qty DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 29, in run
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+[SQL: _in_region
+SELECT dp.libelle AS product_name, SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+WHERE dm."Region" = :region
+GROUP BY dp.libelle
+ORDER BY total_qty DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-22 12:09:44,429 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 12:09:44,547 - ERROR - Error in top_10_products_by_quantity analysis: (psycopg2.errors.SyntaxError) syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+[SQL: _in_region
+SELECT dp.libelle AS product_name, SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+WHERE dm."Region" = :region
+GROUP BY dp.libelle
+ORDER BY total_qty DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 29, in run
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+[SQL: _in_region
+SELECT dp.libelle AS product_name, SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+WHERE dm."Region" = :region
+GROUP BY dp.libelle
+ORDER BY total_qty DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-22 12:10:20,422 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 12:10:20,533 - ERROR - Error in top_10_products_by_quantity analysis: (psycopg2.errors.SyntaxError) syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+[SQL: _in_region
+SELECT dp.libelle AS product_name, SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+WHERE dm."Region" = :region
+GROUP BY dp.libelle
+ORDER BY total_qty DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 29, in run
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) syntax error at or near "_in_region"
+LINE 1: _in_region
+        ^
+
+[SQL: _in_region
+SELECT dp.libelle AS product_name, SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+WHERE dm."Region" = :region
+GROUP BY dp.libelle
+ORDER BY total_qty DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-22 12:11:33,795 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 12:11:33,956 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-11-33\top_10_products_by_quantity.csv
+2025-07-22 12:11:33,957 - ERROR - Error in top_10_products_by_quantity analysis: Unsupported export format: parquet
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 32, in run
+    parquet_path = export_data(df, 'top_10_products_by_quantity', 'parquet')
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 117, in export_data
+    raise ValueError(f"Unsupported export format: {format_type}")
+ValueError: Unsupported export format: parquet
+2025-07-22 12:12:42,899 - INFO - Starting analysis: top_10_products_by_quantity
+2025-07-22 12:12:43,072 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-12-43\top_10_products_by_quantity.csv
+2025-07-22 12:12:43,981 - INFO - Analysis completed in 1.08 seconds
+  - CSV exported to: None
+  - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-22 12:16:22,168 - INFO - Running: top_10_products_by_quantity
+2025-07-22 12:16:22,890 - INFO - Chromium init'ed with kwargs {}
+2025-07-22 12:17:33,120 - INFO - Script starting
+2025-07-22 12:17:33,120 - INFO - Running: top_10_products_by_quantity
+2025-07-22 12:17:33,167 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_q
+2025-07-22 12:17:33,287 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-22_12-17-33\top_10_products_by_quantity.csv
+2025-07-22 12:17:33,992 - INFO - Analysis completed in 0.87 seconds
+2025-07-22 12:17:33,993 - INFO - CSV exported to: None
+2025-07-22 12:17:33,994 - INFO - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-23 07:34:20,682 - INFO - Script starting
+2025-07-23 07:34:20,683 - INFO - Running: top_10_products_by_quantity
+2025-07-23 07:34:20,962 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_q
+2025-07-23 07:34:21,169 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-34-21\top_10_products_by_quantity.csv
+2025-07-23 07:34:22,355 - INFO - Analysis completed in 1.67 seconds
+2025-07-23 07:34:22,356 - INFO - CSV exported to: None
+2025-07-23 07:34:22,356 - INFO - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-23 07:40:00,731 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 07:40:01,063 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-40-01\top_10_products_West.csv
+2025-07-23 07:40:03,504 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-40-03\top_10_products_Central.csv
+2025-07-23 07:40:03,587 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-40-03\top_10_products_East.csv
+2025-07-23 07:40:03,645 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-23 07:40:03,646 - INFO - Running: top_10_products_by_quantity
+2025-07-23 07:40:03,648 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_q
+2025-07-23 07:40:03,771 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-40-03\top_10_products_by_quantity.csv
+2025-07-23 07:40:04,624 - ERROR - Error in top_10_products_by_quantity analysis: name 'start_time' is not defined
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 53, in run
+    duration = (datetime.now() - start_time).total_seconds()
+                                 ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2025-07-23 07:41:26,330 - INFO - Script starting
+2025-07-23 07:41:26,331 - INFO - Running: top_10_products_by_quantity
+2025-07-23 07:41:26,389 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_q
+2025-07-23 07:41:26,545 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-41-26\top_10_products_by_quantity.csv
+2025-07-23 07:41:27,285 - INFO - Analysis completed in 0.95 seconds
+2025-07-23 07:41:27,285 - INFO - CSV exported to: None
+2025-07-23 07:41:27,285 - INFO - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-23 07:42:01,545 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 07:42:01,764 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-42-01\top_10_products_West.csv
+2025-07-23 07:42:02,163 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-42-02\top_10_products_Central.csv
+2025-07-23 07:42:02,246 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-42-02\top_10_products_East.csv
+2025-07-23 07:42:02,294 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-23 07:42:02,294 - INFO - Running: top_10_products_by_quantity
+2025-07-23 07:42:02,296 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_q
+2025-07-23 07:42:02,411 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-42-02\top_10_products_by_quantity.csv
+2025-07-23 07:42:03,177 - ERROR - Error in top_10_products_by_quantity analysis: name 'start_time' is not defined
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_products_by_quantity.py", line 53, in run
+    duration = (datetime.now() - start_time).total_seconds()
+                                 ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2025-07-23 07:55:06,498 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 07:55:06,867 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-55-06\top_10_products_West.csv
+2025-07-23 07:55:07,401 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-55-07\top_10_products_Central.csv
+2025-07-23 07:55:07,518 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-55-07\top_10_products_East.csv
+2025-07-23 07:55:07,583 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-23 07:55:07,584 - INFO - Running: top_10_products_by_quantity
+2025-07-23 07:55:07,585 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.quantite) AS total_qty
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_q
+2025-07-23 07:55:07,754 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_07-55-07\top_10_products_by_quantity.csv
+2025-07-23 07:55:08,708 - INFO - Analysis completed in 1.12 seconds
+2025-07-23 07:55:08,710 - INFO - CSV exported to: None
+2025-07-23 07:55:08,710 - INFO - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-23 08:11:12,430 - INFO - Running: top_10_sales_per_year
+2025-07-23 08:11:12,509 - INFO - Extracted SQL query preview:
+SELECT
+    EXTRACT(YEAR FROM "Order Date") AS year,
+    "Product Name" AS product_name,
+    SUM("Sales") AS total_sales
+FROM sales
+WHERE EXTRACT(YEAR FROM "Order Date") BETWEEN 2014 AND 2016
+GROUP BY 
+2025-07-23 08:11:12,649 - ERROR - Error in top_10_sales_per_year analysis: (psycopg2.errors.UndefinedTable) relation "sales" does not exist
+LINE 5: FROM sales
+             ^
+
+[SQL: SELECT
+    EXTRACT(YEAR FROM "Order Date") AS year,
+    "Product Name" AS product_name,
+    SUM("Sales") AS total_sales
+FROM sales
+WHERE EXTRACT(YEAR FROM "Order Date") BETWEEN 2014 AND 2016
+GROUP BY year, product_name
+ORDER BY year, total_sales DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "sales" does not exist
+LINE 5: FROM sales
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_sales_per_years.py", line 28, in run
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "sales" does not exist
+LINE 5: FROM sales
+             ^
+
+[SQL: SELECT
+    EXTRACT(YEAR FROM "Order Date") AS year,
+    "Product Name" AS product_name,
+    SUM("Sales") AS total_sales
+FROM sales
+WHERE EXTRACT(YEAR FROM "Order Date") BETWEEN 2014 AND 2016
+GROUP BY year, product_name
+ORDER BY year, total_sales DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-23 08:12:00,076 - INFO - Running: top_10_sales_per_year
+2025-07-23 08:12:00,127 - INFO - Extracted SQL query preview:
+SELECT
+    dt.annee AS year,
+    dp.libelle AS product_name,
+    SUM(fv.ca_ht) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_temps dt ON fv.date_id = dt.da
+2025-07-23 08:12:00,211 - ERROR - Error in top_10_sales_per_year analysis: (psycopg2.errors.UndefinedColumn) column dt.date_key does not exist
+LINE 7: JOIN dim_temps dt ON fv.date_id = dt.date_key
+                                          ^
+HINT:  Perhaps you meant to reference the column "dt.date_id".
+
+[SQL: SELECT
+    dt.annee AS year,
+    dp.libelle AS product_name,
+    SUM(fv.ca_ht) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_temps dt ON fv.date_id = dt.date_key
+WHERE dt.annee BETWEEN 2014 AND 2016
+GROUP BY dt.annee, dp.libelle
+ORDER BY dt.annee, total_sales DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column dt.date_key does not exist
+LINE 7: JOIN dim_temps dt ON fv.date_id = dt.date_key
+                                          ^
+HINT:  Perhaps you meant to reference the column "dt.date_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\top_10_sales_per_years.py", line 28, in run
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column dt.date_key does not exist
+LINE 7: JOIN dim_temps dt ON fv.date_id = dt.date_key
+                                          ^
+HINT:  Perhaps you meant to reference the column "dt.date_id".
+
+[SQL: SELECT
+    dt.annee AS year,
+    dp.libelle AS product_name,
+    SUM(fv.ca_ht) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+JOIN dim_temps dt ON fv.date_id = dt.date_key
+WHERE dt.annee BETWEEN 2014 AND 2016
+GROUP BY dt.annee, dp.libelle
+ORDER BY dt.annee, total_sales DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-23 08:23:53,759 - INFO - Running: top_10_sales_per_year
+2025-07-23 08:23:53,864 - INFO - Extracted SQL query preview:
+SELECT 
+    dt.annee AS year,
+    dp.libelle AS product_name,
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id =
+2025-07-23 08:23:54,116 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-23-54\top_10_sales_per_year.csv
+2025-07-23 08:23:54,993 - INFO - Analysis completed in 1.23 seconds
+2025-07-23 08:23:54,993 - INFO - CSV exported to: None
+2025-07-23 08:23:54,993 - INFO - Interactive chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_sales_per_year.html
+2025-07-23 08:33:02,401 - INFO - Running: top_10_products_per_year
+2025-07-23 08:33:02,654 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-33-02\top_10_products_2014.csv
+2025-07-23 08:33:03,506 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-33-03\top_10_products_2015.csv
+2025-07-23 08:33:03,551 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-33-03\top_10_products_2016.csv
+2025-07-23 08:33:03,599 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-33-03\top_10_products_2017.csv
+2025-07-23 08:33:03,641 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_year.html
+2025-07-23 08:47:30,239 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 08:47:30,461 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-47-30\top_10_products_West.csv
+2025-07-23 08:50:27,667 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 08:50:27,854 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-50-27\top_10_products_West.csv
+2025-07-23 08:52:02,544 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 08:52:02,717 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-52-02\top_10_products_West.csv
+2025-07-23 08:53:18,414 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 08:53:18,647 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-53-18\top_10_products_West.csv
+2025-07-23 08:55:09,268 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 08:55:09,453 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-55-09\top_10_products_West.csv
+2025-07-23 08:57:02,878 - INFO - Running: top_10_products_per_top_regions
+2025-07-23 08:57:03,053 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-03\top_10_products_West.csv
+2025-07-23 08:57:03,519 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-03\top_10_products_Central.csv
+2025-07-23 08:57:03,582 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-03\top_10_products_East.csv
+2025-07-23 08:57:03,626 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_region.html
+2025-07-23 08:57:03,627 - INFO - Running: top_10_products_by_quantity
+2025-07-23 08:57:03,628 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-07-23 08:57:03,772 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-03\top_10_products_by_quantity.csv
+2025-07-23 08:57:04,750 - INFO - Analysis completed in 1.12 seconds
+2025-07-23 08:57:04,750 - INFO - CSV exported to: None
+2025-07-23 08:57:04,750 - INFO - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-07-23 08:57:04,751 - INFO - Running: top_10_products_per_year
+2025-07-23 08:57:04,890 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-04\top_10_products_2014.csv
+2025-07-23 08:57:04,934 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-04\top_10_products_2015.csv
+2025-07-23 08:57:04,983 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-04\top_10_products_2016.csv
+2025-07-23 08:57:05,030 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-05\top_10_products_2017.csv
+2025-07-23 08:57:05,085 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_year.html

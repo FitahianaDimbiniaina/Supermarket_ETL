@@ -1,0 +1,79 @@
+Folder PATH listing
+Volume serial number is C014-14A0
+D:.
+|   config.py
+|   rapport_de_projet.pdf
+|   tree.txt
+|   
++---dashboard
+|       static_dashboard.html
+|       
++---data
+|   +---processed
+|   |       dim_client.csv
+|   |       dim_magasins.csv
+|   |       dim_produit.csv
+|   |       dim_temps.csv
+|   |       fact_ventes.csv
+|   |       
+|   \---raw
+|           AF.txt
+|           cities1000.txt
+|           cities1000.zip
+|           en.openfoodfacts.org.products.csv
+|           FR.txt
+|           jours_feries_metropole.csv
+|           postal_codes.csv
+|           readme.txt
+|           sales_data.csv
+|           SampleSuperstore.csv
+|           uszips.csv
+|           
++---exports
+|   +---charts
+|   +---csv
+|   |       correlation_category_recurrence.csv
+|   |       top_10_products_by_quantity.csv
+|   |       top_10_products_by_quantity.parquet
+|   |       
+|   \---pdf
++---scripts
+|   |   analyse.py
+|   |   analysis.log
+|   |   extract.py
+|   |   load.py
+|   |   load_to_postgre.py
+|   |   main.py
+|   |   transform.py
+|   |   
+|   +---analysis
+|   |   |   correlation_category_recurrence.py
+|   |   |   top_10_products_by_quantity.py
+|   |   |   top_10_products_by_region_limited.py
+|   |   |   top_10_sales_by_region.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           correlation_category_recurrence.cpython-313.pyc
+|   |           top_10_products_by_quantity.cpython-313.pyc
+|   |           top_10_products_by_region_limited.cpython-313.pyc
+|   |           top_10_sales_by_region.cpython-313.pyc
+|   |           __init__.cpython-313.pyc
+|   |           
+|   +---dim_populationi
+|   |       dim_client.py
+|   |       dim_temps.py
+|   |       
+|   +---utils
+|   |   |   common.py
+|   |   |   
+|   |   \---__pycache__
+|   |           common.cpython-313.pyc
+|   |           
+|   \---__pycache__
+|           main.cpython-313.pyc
+|           
+\---sql
+        create_schema.sql
+        olap_queries.sql
+        
