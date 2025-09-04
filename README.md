@@ -71,7 +71,6 @@ Navigate to the `scripts` folder and initialize the database with empty tables:
 cd scripts
 python load_to_postgre.py
 ```
-
 ### 3. Populate Dimension Table
 
 The `dim_population` script loads population data into the database:
@@ -79,8 +78,11 @@ The `dim_population` script loads population data into the database:
 ```bash
 python dim_population.py
 ```
-
-### 4. Populate Views
+### 4. Populate the fact_tables
+```python
+python fact_fidelite
+```
+### 5. Populate Views
 
 Views are **predefined SQL queries stored in the database** that simplify analysis, reduce repeated query writing, and optimize performance. Populate them with:
 
@@ -90,7 +92,7 @@ python populate_views.py
 
 This reads queries from `sql/olap_queries.sql` and creates corresponding views in the database.
 
-### 5. Run Analysis
+### 6. Run Analysis
 
 Return to the root folder and run the main analysis script:
 
