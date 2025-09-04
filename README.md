@@ -1,5 +1,3 @@
-Absolutely, Fitahiana. Here's a refined version of your README that balances technical clarity with purpose-driven storytelling. It highlights the pipeline’s value, modularity, and outputs—while keeping setup instructions clean and actionable.
-
 🧠 Loyalty & Sales ETL Pipeline
 A modular ETL pipeline designed to process, analyze, and export loyalty and sales data across multiple marts and regions. The project emphasizes clarity, schema alignment, and reusable scripts, enabling seamless integration with frontend tools and dashboards.
 
