@@ -24,25 +24,29 @@ PostgreSQL must be installed to run this project.
 ### Populating the `dim_population` table
 
 To populate the `dim_population` table, follow these steps:
-1. install the needed library
- ```
+1. install the necessary library
+```bash
 pip install -r requirements.txt
 ```
 2. create the database
   a. navigate to scripts folder if not already in
-```
+```bash
 cs scripts
 ```
   b.Create the database and load the table
 ```python
 python load_to_postgre.py
 ```
-4. Open a terminal and navigate to the `scripts` folder:
-```
-cd scripts
-```
-```
+3. Run:
+```bash
 python dim_population
 ```
-
-
+4. Populate the views sql
+```python
+python populate_views.py
+```
+5. Run your first analysis
+  a. navigate to the root folder and run
+```python
+python main.py
+```
