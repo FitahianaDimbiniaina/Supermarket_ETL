@@ -42,7 +42,7 @@ def extract_sql_block(sql_file_path: Path, block_name: str) -> str:
             inside_block = True
             continue
         elif line.strip().startswith('--') and inside_block:
-            break  # next SQL block starts, stop here
+            break  
         elif inside_block:
             extracted_lines.append(line)
 
@@ -70,9 +70,8 @@ def archive_old_exports(format_type: str):
     format_dir = EXPORTS_DIR / format_type
     archive_dir = EXPORTS_DIR / 'archive' / format_type
     archive_dir.mkdir(parents=True, exist_ok=True)
-    
+  
     for item in format_dir.iterdir():
-        # Move files only, ignore directories (e.g., timestamped export folders)
         if item.is_file():
             target = archive_dir / item.name
             try:
@@ -81,42 +80,50 @@ def archive_old_exports(format_type: str):
             except Exception as e:
                 logger.error(f"Failed to archive {item}: {e}")
 
-
-def export_data(df, base_filename, format_type='csv'):
+def export_data(df, caller_module, format_type='csv'):
+    """
+    Export a dataframe into exports/<process_folder>/<date>/<script_name>/<timestamped_file>.
+    `caller_module` should be __name__ of the calling script.
+    Process folder is automatically inferred from the module path under scripts.analysis
+    """
     now = datetime.now()
-    timestamp = now.strftime('%Y-%m-%d_%H-%M-%S')
+    date_str = now.strftime('%Y-%m-%d')
+    timestamp = now.strftime('%H-%M-%S')
+
+    parts = caller_module.split('.')
+    try:
+        idx = parts.index('analysis')
+        process_folder = parts[idx + 1]  # first folder under analysis
+    except (ValueError, IndexError):
+        process_folder = 'analysis'  # fallback
+
+    script_name = parts[-1]
 
     # Paths
-    export_dir = EXPORTS_DIR / timestamp
-    archive_dir = EXPORTS_DIR / 'archive'
+    process_dir = EXPORTS_DIR / process_folder / date_str / script_name
+    archive_dir = EXPORTS_DIR / 'archive' / process_folder / date_str / script_name
 
-    # Create timestamped export directory
-    export_dir.mkdir(parents=True, exist_ok=True)
+    process_dir.mkdir(parents=True, exist_ok=True)
+    archive_dir.mkdir(parents=True, exist_ok=True)
 
-    # Move all existing exported files (non-directory) to archive
-    for file in EXPORTS_DIR.iterdir():
-        if file.is_file() and file.suffix in ['.csv', '.html', '.pdf']:
-            archive_dir.mkdir(parents=True, exist_ok=True)
-            archived_path = archive_dir / f"{file.stem}_{now.strftime('%Y%m%d%H%M%S')}{file.suffix}"
+    # Archive existing files
+    for file in process_dir.iterdir():
+        if file.is_file() and file.suffix in ['.csv']:
+            archived_path = archive_dir / f"{file.stem}_{timestamp}{file.suffix}"
             shutil.move(str(file), str(archived_path))
+            logger.info(f"Archived {file.name} to {archived_path}")
 
-    # Define export path
-    filename = f"{base_filename}.{format_type}"
-    output_path = export_dir / filename
+    # Filename
+    filename = f"{script_name}_{timestamp}.csv"
+    output_path = process_dir / filename
 
-    # Export according to format
-    if format_type == 'csv':
-        df.to_csv(output_path, index=False)
-    elif format_type == 'html':
-        df.to_html(output_path, index=False)
-    elif format_type == 'json':
-        df.to_json(output_path, orient='records', indent=2)
-    elif format_type == 'excel':
-        df.to_excel(output_path, index=False)
-    else:
-        raise ValueError(f"Unsupported export format: {format_type}")
+    # Export CSV only
+    df.to_csv(output_path, index=False)
+    logger.info(f"Exported CSV to {output_path}")
 
-    logger.info(f"Exported {format_type.upper()} to {output_path}")
+    return output_path
+
+
 
 def get_project_root() -> Path:
     return PROJECT_ROOT

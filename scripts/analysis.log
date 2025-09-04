@@ -1558,3 +1558,867 @@ ORDER BY total_
 2025-07-23 08:57:04,983 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-04\top_10_products_2016.csv
 2025-07-23 08:57:05,030 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-07-23_08-57-05\top_10_products_2017.csv
 2025-07-23 08:57:05,085 - INFO - HTML report generated: D:\Projects\ETL\supermarket_etl_project\exports\top_products_by_year.html
+2025-09-01 11:17:09,407 - INFO - Running: top_10_products_by_quantity
+2025-09-01 11:17:09,521 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 11:17:09,723 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_11-17-09.csv
+2025-09-01 11:17:11,078 - INFO - Analysis completed in 1.67 seconds
+2025-09-01 11:17:11,078 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_11-17-09.csv
+2025-09-01 11:17:11,078 - INFO - Chart saved to: D:\Projects\ETL\supermarket_etl_project\exports\charts\top_10_products_by_quantity.png
+2025-09-01 11:25:59,511 - INFO - Running analysis module
+2025-09-01 11:25:59,604 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 11:25:59,821 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_11-25-59.csv
+2025-09-01 11:25:59,821 - INFO - Analysis completed in 0.31 seconds
+2025-09-01 11:25:59,821 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_11-25-59.csv
+2025-09-01 11:35:15,967 - INFO - Populated 'magasin_name' for all magasins.
+2025-09-01 11:36:50,630 - INFO - Populated 'magasin_name' for all magasins.
+2025-09-01 11:40:01,514 - INFO - Populated 'client_name' for all clients.
+2025-09-01 11:48:59,300 - INFO - Populated 'client_name' for all clients.
+2025-09-01 11:52:23,286 - INFO - Running analysis module
+2025-09-01 11:52:23,340 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 11:52:23,498 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_11-52-23.csv
+2025-09-01 11:52:23,498 - INFO - Analysis completed in 0.21 seconds
+2025-09-01 11:52:23,499 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_11-52-23.csv
+2025-09-01 11:52:23,499 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 11:52:23,500 - INFO - Extracted SQL query preview:
+SELECT
+    f.client_id,
+    c.client_name,
+    f.magasin_id,
+    m.magasin_name,
+    SUM(f.points_earned) AS total_points_earned
+FROM fact_fidelite f
+JOIN dim_client c ON f.client_id = c.client_id
+JOI
+2025-09-01 11:52:23,664 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_11-52-23.csv
+2025-09-01 11:52:23,665 - INFO - Analysis completed in 0.17 seconds
+2025-09-01 11:52:23,665 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_11-52-23.csv
+2025-09-01 12:31:18,818 - INFO - Running analysis module
+2025-09-01 12:31:18,924 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 12:31:19,257 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_12-31-19.csv
+2025-09-01 12:31:19,257 - INFO - Analysis completed in 0.44 seconds
+2025-09-01 12:31:19,257 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_12-31-19.csv
+2025-09-01 12:31:19,258 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 12:31:19,345 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_12-31-19.csv
+2025-09-01 12:31:19,346 - INFO - Analysis completed in 0.09 seconds
+2025-09-01 12:31:19,346 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_12-31-19.csv
+2025-09-01 12:31:19,347 - INFO - Running: top_10_loyal_magasins
+2025-09-01 12:31:19,457 - ERROR - Error in top_10_loyal_magasins: (psycopg2.errors.UndefinedTable) relation "dim_magasins" does not exist
+LINE 19: FROM dim_magasins m
+              ^
+
+[SQL: WITH client_loyalty AS (
+    SELECT 
+        f.client_id,
+        f.magasin_id,
+        SUM(f.points_earned) AS total_points
+    FROM fact_fidelite f
+    GROUP BY f.client_id, f.magasin_id
+),
+magasin_loyalty AS (
+    SELECT 
+        magasin_id,
+        COUNT(client_id) AS loyal_clients_count,
+        SUM(total_points) AS total_loyalty_points
+    FROM client_loyalty
+    WHERE total_points > 0
+    GROUP BY magasin_id
+)
+SELECT m.magasin_id, m.magasin_name, ml.loyal_clients_count, ml.total_loyalty_points
+FROM dim_magasins m
+JOIN magasin_loyalty ml ON m.magasin_id = ml.magasin_id
+ORDER BY ml.total_loyalty_points DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "dim_magasins" does not exist
+LINE 19: FROM dim_magasins m
+              ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\fact_fidelite_mart\top_10_most_magasin_with_loyal_customer.py", line 16, in run
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "dim_magasins" does not exist
+LINE 19: FROM dim_magasins m
+              ^
+
+[SQL: WITH client_loyalty AS (
+    SELECT 
+        f.client_id,
+        f.magasin_id,
+        SUM(f.points_earned) AS total_points
+    FROM fact_fidelite f
+    GROUP BY f.client_id, f.magasin_id
+),
+magasin_loyalty AS (
+    SELECT 
+        magasin_id,
+        COUNT(client_id) AS loyal_clients_count,
+        SUM(total_points) AS total_loyalty_points
+    FROM client_loyalty
+    WHERE total_points > 0
+    GROUP BY magasin_id
+)
+SELECT m.magasin_id, m.magasin_name, ml.loyal_clients_count, ml.total_loyalty_points
+FROM dim_magasins m
+JOIN magasin_loyalty ml ON m.magasin_id = ml.magasin_id
+ORDER BY ml.total_loyalty_points DESC
+LIMIT 10;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 12:34:58,476 - INFO - Running analysis module
+2025-09-01 12:34:58,528 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 12:34:58,697 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_12-34-58.csv
+2025-09-01 12:34:58,698 - INFO - Analysis completed in 0.22 seconds
+2025-09-01 12:34:58,698 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_12-34-58.csv
+2025-09-01 12:34:58,699 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 12:34:58,776 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_12-34-58.csv
+2025-09-01 12:34:58,776 - INFO - Analysis completed in 0.08 seconds
+2025-09-01 12:34:58,776 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_12-34-58.csv
+2025-09-01 12:34:58,777 - INFO - Running: top_10_loyal_magasins
+2025-09-01 12:34:58,882 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_12-34-58.csv
+2025-09-01 12:34:58,882 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_12-34-58.csv
+2025-09-01 12:34:58,883 - INFO - Analysis completed in 0.11 seconds
+2025-09-01 14:55:17,062 - INFO - Running analysis module
+2025-09-01 14:55:17,253 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 14:55:17,646 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_14-55-17.csv
+2025-09-01 14:55:17,648 - INFO - Analysis completed in 0.59 seconds
+2025-09-01 14:55:17,648 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_14-55-17.csv
+2025-09-01 14:55:17,649 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 14:55:17,757 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_14-55-17.csv
+2025-09-01 14:55:17,757 - INFO - Analysis completed in 0.11 seconds
+2025-09-01 14:55:17,757 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal\most_loyal_14-55-17.csv
+2025-09-01 14:55:17,758 - INFO - Running: top_10_loyal_magasins
+2025-09-01 14:55:17,886 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_14-55-17.csv
+2025-09-01 14:55:17,886 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_14-55-17.csv
+2025-09-01 14:55:17,886 - INFO - Analysis completed in 0.13 seconds
+2025-09-01 15:22:10,120 - INFO - Running: top_10_sales_by_region
+2025-09-01 15:22:10,209 - ERROR - Error in top_10_sales_by_region analysis: SQL block 'top_10_sales_by_region' not found in D:\Projects\ETL\supermarket_etl_project\sql\olap_queries.sql
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\fact_vente_mart\top_10_sales_by_region.py", line 15, in run
+    query = extract_sql_block(SQL_DIR / 'olap_queries.sql', 'top_10_sales_by_region')
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 50, in extract_sql_block
+    raise ValueError(f"SQL block '{block_name}' not found in {sql_file_path}")
+ValueError: SQL block 'top_10_sales_by_region' not found in D:\Projects\ETL\supermarket_etl_project\sql\olap_queries.sql
+2025-09-01 15:23:29,674 - INFO - Running: top_10_sales_by_region
+2025-09-01 15:23:29,942 - ERROR - Error in top_10_sales_by_region analysis: (psycopg2.errors.UndefinedColumn) column dm.region does not exist
+LINE 4:         dm.region,
+                ^
+HINT:  Perhaps you meant to reference the column "dm.Region".
+
+[SQL: SELECT region, libelle AS product_name, total_sales
+FROM (
+    SELECT 
+        dm.region,
+        dp.libelle,
+        SUM(fv.montant) AS total_sales,
+        RANK() OVER (PARTITION BY dm.region ORDER BY SUM(fv.montant) DESC) AS rank
+    FROM fact_ventes fv
+    JOIN dim_produit dp ON fv.produit_id = dp.code
+    JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+    GROUP BY dm.region, dp.libelle
+) ranked
+WHERE rank <= 10
+ORDER BY region, total_sales DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column dm.region does not exist
+LINE 4:         dm.region,
+                ^
+HINT:  Perhaps you meant to reference the column "dm.Region".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\fact_vente_mart\top_10_sales_by_region.py", line 16, in run
+    df = pd.read_sql(query, engine)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1775, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column dm.region does not exist
+LINE 4:         dm.region,
+                ^
+HINT:  Perhaps you meant to reference the column "dm.Region".
+
+[SQL: SELECT region, libelle AS product_name, total_sales
+FROM (
+    SELECT 
+        dm.region,
+        dp.libelle,
+        SUM(fv.montant) AS total_sales,
+        RANK() OVER (PARTITION BY dm.region ORDER BY SUM(fv.montant) DESC) AS rank
+    FROM fact_ventes fv
+    JOIN dim_produit dp ON fv.produit_id = dp.code
+    JOIN dim_magasin dm ON fv.magasin_id = dm.magasin_id
+    GROUP BY dm.region, dp.libelle
+) ranked
+WHERE rank <= 10
+ORDER BY region, total_sales DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 15:25:56,176 - INFO - Running: top_10_sales_by_region
+2025-09-01 15:25:56,458 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_sales_by_region\top_10_sales_by_region_15-25-56.csv
+2025-09-01 15:25:56,458 - INFO - Analysis completed in 0.28 seconds
+2025-09-01 15:25:56,458 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_sales_by_region\top_10_sales_by_region_15-25-56.csv
+2025-09-01 15:25:56,459 - INFO - Running analysis module
+2025-09-01 15:25:56,460 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 15:25:56,685 - INFO - Archived top_10_products_by_quantity_14-55-17.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_14-55-17_15-25-56.csv
+2025-09-01 15:25:56,687 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_15-25-56.csv
+2025-09-01 15:25:56,688 - INFO - Analysis completed in 0.23 seconds
+2025-09-01 15:25:56,689 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_15-25-56.csv
+2025-09-01 15:25:56,690 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 15:25:56,771 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_15-25-56.csv
+2025-09-01 15:25:56,771 - INFO - Analysis completed in 0.08 seconds
+2025-09-01 15:25:56,771 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_15-25-56.csv
+2025-09-01 15:25:56,772 - INFO - Running: top_10_loyal_magasins
+2025-09-01 15:25:56,887 - INFO - Archived top_10_most_magasin_with_loyal_customer_14-55-17.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_14-55-17_15-25-56.csv
+2025-09-01 15:25:56,889 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_15-25-56.csv
+2025-09-01 15:25:56,889 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_15-25-56.csv
+2025-09-01 15:25:56,889 - INFO - Analysis completed in 0.12 seconds
+2025-09-01 15:29:41,524 - INFO - Running: top_10_sales_by_region
+2025-09-01 15:29:41,827 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_15-29-41.csv
+2025-09-01 15:29:41,828 - INFO - Analysis completed in 0.30 seconds
+2025-09-01 15:29:41,828 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_15-29-41.csv
+2025-09-01 15:29:41,829 - INFO - Running analysis module
+2025-09-01 15:29:41,830 - INFO - Extracted SQL query preview:
+SELECT 
+    dp.code,
+    dp.libelle AS product_name, 
+    SUM(fv.montant) AS total_sales
+FROM fact_ventes fv
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dp.code, dp.libelle
+ORDER BY total_
+2025-09-01 15:29:41,986 - INFO - Archived top_10_products_by_quantity_15-25-56.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_15-25-56_15-29-41.csv
+2025-09-01 15:29:41,988 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_15-29-41.csv
+2025-09-01 15:29:41,988 - INFO - Analysis completed in 0.16 seconds
+2025-09-01 15:29:41,989 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_15-29-41.csv
+2025-09-01 15:29:41,990 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 15:29:42,070 - INFO - Archived most_loyal_to_Hicks_white_15-25-56.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_15-25-56_15-29-42.csv
+2025-09-01 15:29:42,073 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_15-29-42.csv
+2025-09-01 15:29:42,074 - INFO - Analysis completed in 0.08 seconds
+2025-09-01 15:29:42,074 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_15-29-42.csv
+2025-09-01 15:29:42,074 - INFO - Running: top_10_loyal_magasins
+2025-09-01 15:29:42,279 - INFO - Archived top_10_most_magasin_with_loyal_customer_15-25-56.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_15-25-56_15-29-42.csv
+2025-09-01 15:29:42,283 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_15-29-42.csv
+2025-09-01 15:29:42,287 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_15-29-42.csv
+2025-09-01 15:29:42,288 - INFO - Analysis completed in 0.21 seconds
+2025-09-01 21:45:33,337 - INFO - Deploying view: base_total_sales_product_region
+2025-09-01 21:45:33,338 - ERROR - Failed to deploy views: SQL block 'base_total_sales_product_region' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\populate_views.py", line 31, in deploy_views
+    sql = extract_sql_block(SQL_DIR / "views.sql", view_name)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 50, in extract_sql_block
+    raise ValueError(f"SQL block '{block_name}' not found in {sql_file_path}")
+ValueError: SQL block 'base_total_sales_product_region' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+2025-09-01 21:47:34,257 - INFO - Deploying view: Total sales per product per region
+2025-09-01 21:47:34,272 - INFO - Deploying view: Total sales per product overall
+2025-09-01 21:47:34,274 - INFO - Deploying view: Total sales per product per year
+2025-09-01 21:47:34,276 - INFO - Deploying view: Total loyalty points per client per magasin
+2025-09-01 21:47:34,278 - INFO - Deploying view: Top product per region (rank 1)
+2025-09-01 21:47:34,281 - INFO - Deploying view: Top 10 products per year
+2025-09-01 21:47:34,282 - INFO - Deploying view: Top 3 regions by total sales
+2025-09-01 21:47:34,284 - INFO - Deploying view: Top 10 products by region
+2025-09-01 21:47:34,285 - INFO - Deploying view: Top 10 products overall
+2025-09-01 21:47:34,287 - INFO - Deploying view: Top loyal clients for magasin 246
+2025-09-01 21:47:34,289 - INFO - Deploying view: Top 10 magasins by loyal customers
+2025-09-01 21:47:34,292 - INFO - Deploying view: Correlation category vs purchase recurrence
+2025-09-01 21:47:34,296 - ERROR - Failed to deploy views: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = text
+LINE 7: JOIN dim_client dc ON fv.client_id::int = dc.client_id
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: CREATE OR REPLACE VIEW correlation_category_recurrence AS
+SELECT
+    dc.client_id,
+    dp.categorie,
+    COUNT(DISTINCT dt.date) AS purchase_days
+FROM fact_ventes fv
+JOIN dim_client dc ON fv.client_id::int = dc.client_id
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dc.client_id, dp.categorie;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedFunction: operator does not exist: integer = text
+LINE 7: JOIN dim_client dc ON fv.client_id::int = dc.client_id
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\populate_views.py", line 33, in deploy_views
+    conn.execute(text(sql))
+    ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\NekrozX\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = text
+LINE 7: JOIN dim_client dc ON fv.client_id::int = dc.client_id
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: CREATE OR REPLACE VIEW correlation_category_recurrence AS
+SELECT
+    dc.client_id,
+    dp.categorie,
+    COUNT(DISTINCT dt.date) AS purchase_days
+FROM fact_ventes fv
+JOIN dim_client dc ON fv.client_id::int = dc.client_id
+JOIN dim_temps dt ON fv.date_id = dt.date_id
+JOIN dim_produit dp ON fv.produit_id = dp.code
+GROUP BY dc.client_id, dp.categorie;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 21:49:18,122 - INFO - Deploying view: Total sales per product per region
+2025-09-01 21:49:18,127 - INFO - Deploying view: Total sales per product overall
+2025-09-01 21:49:18,130 - INFO - Deploying view: Total sales per product per year
+2025-09-01 21:49:18,132 - INFO - Deploying view: Total loyalty points per client per magasin
+2025-09-01 21:49:18,133 - INFO - Deploying view: Top product per region (rank 1)
+2025-09-01 21:49:18,136 - INFO - Deploying view: Top 10 products per year
+2025-09-01 21:49:18,138 - INFO - Deploying view: Top 3 regions by total sales
+2025-09-01 21:49:18,140 - INFO - Deploying view: Top 10 products by region
+2025-09-01 21:49:18,143 - INFO - Deploying view: Top 10 products overall
+2025-09-01 21:49:18,145 - INFO - Deploying view: Top loyal clients for magasin 246
+2025-09-01 21:49:18,147 - INFO - Deploying view: Top 10 magasins by loyal customers
+2025-09-01 21:49:18,150 - INFO - Deploying view: Correlation category vs purchase recurrence
+2025-09-01 21:49:18,153 - INFO - All views deployed successfully in 0.14 seconds
+2025-09-01 21:54:25,086 - INFO - Running: top_10_sales_by_region
+2025-09-01 21:54:25,530 - INFO - Archived top_sales_by_region_15-29-41.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_15-29-41_21-54-25.csv
+2025-09-01 21:54:25,543 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_21-54-25.csv
+2025-09-01 21:54:25,543 - INFO - Analysis completed in 0.46 seconds
+2025-09-01 21:54:25,544 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_21-54-25.csv
+2025-09-01 21:54:25,545 - INFO - Running analysis module
+2025-09-01 21:54:25,546 - INFO - Extracted SQL query preview:
+SELECT *
+FROM top_10_products_by_quantity;
+2025-09-01 21:54:25,734 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_21-54-25.csv
+2025-09-01 21:54:25,734 - INFO - Analysis completed in 0.19 seconds
+2025-09-01 21:54:25,734 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_21-54-25.csv
+2025-09-01 21:54:25,735 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 21:54:25,821 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_21-54-25.csv
+2025-09-01 21:54:25,822 - INFO - Analysis completed in 0.09 seconds
+2025-09-01 21:54:25,822 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_21-54-25.csv
+2025-09-01 21:54:25,823 - INFO - Running: top_10_loyal_magasins
+2025-09-01 21:54:25,940 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_21-54-25.csv
+2025-09-01 21:54:25,940 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_21-54-25.csv
+2025-09-01 21:54:25,941 - INFO - Analysis completed in 0.12 seconds
+2025-09-01 22:18:17,076 - INFO - Deploying view: base daily sales per product per regionmonthly sales per product per regionmonthly loyalty points per client
+2025-09-01 22:18:17,077 - ERROR - Failed to deploy views: SQL block 'base daily sales per product per regionmonthly sales per product per regionmonthly loyalty points per client' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\populate_views.py", line 23, in deploy_views
+    sql = extract_sql_block(SQL_DIR / "views.sql", view_name)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 50, in extract_sql_block
+    raise ValueError(f"SQL block '{block_name}' not found in {sql_file_path}")
+ValueError: SQL block 'base daily sales per product per regionmonthly sales per product per regionmonthly loyalty points per client' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+2025-09-01 22:19:17,789 - INFO - Deploying view: base daily sales per product per region
+2025-09-01 22:19:17,790 - ERROR - Failed to deploy views: SQL block 'base daily sales per product per region' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\populate_views.py", line 23, in deploy_views
+    sql = extract_sql_block(SQL_DIR / "views.sql", view_name)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 50, in extract_sql_block
+    raise ValueError(f"SQL block '{block_name}' not found in {sql_file_path}")
+ValueError: SQL block 'base daily sales per product per region' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+2025-09-01 22:21:07,215 - INFO - Deploying view: base daily sales per product per region
+2025-09-01 22:21:07,222 - INFO - Deploying view: monthly sales per product per region
+2025-09-01 22:21:07,224 - INFO - Deploying view: monthly loyalty points per client
+2025-09-01 22:21:07,227 - INFO - All views deployed successfully in 0.22 seconds
+2025-09-01 22:32:17,180 - INFO - Deploying view: Top products per region in 2017 (weekly)
+2025-09-01 22:32:17,180 - ERROR - Failed to deploy views: SQL block 'Top products per region in 2017 (weekly)' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\populate_views.py", line 21, in deploy_views
+    sql = extract_sql_block(SQL_DIR / "views.sql", view_name)
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 50, in extract_sql_block
+    raise ValueError(f"SQL block '{block_name}' not found in {sql_file_path}")
+ValueError: SQL block 'Top products per region in 2017 (weekly)' not found in D:\Projects\ETL\supermarket_etl_project\sql\views.sql
+2025-09-01 22:33:56,234 - INFO - Deploying view: Top 3 products by sales in the Eastern region for January 2017
+2025-09-01 22:33:56,245 - INFO - Deploying view: Total loyalty points per client in March 2017
+2025-09-01 22:33:56,248 - INFO - Deploying view: Top 5 regions by sales in Q2 2017
+2025-09-01 22:33:56,251 - INFO - Deploying view: Most sold product categories in June 2017
+2025-09-01 22:33:56,255 - INFO - Deploying view: Top loyal clients in the Western region for 2017 H2 (Jul-Dec)
+2025-09-01 22:33:56,258 - INFO - All views deployed successfully in 0.14 seconds
+2025-09-01 23:03:18,790 - INFO - Running: top_10_sales_by_region
+2025-09-01 23:03:19,149 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-03-19.csv
+2025-09-01 23:03:19,149 - INFO - Analysis completed in 0.36 seconds
+2025-09-01 23:03:19,150 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-03-19.csv
+2025-09-01 23:03:19,150 - INFO - Running analysis module
+2025-09-01 23:03:19,151 - INFO - Extracted SQL query preview:
+SELECT *
+FROM top_10_products_by_quantity;
+2025-09-01 23:03:19,346 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-03-19.csv
+2025-09-01 23:03:19,370 - INFO - Analysis completed in 0.22 seconds
+2025-09-01 23:03:19,371 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-03-19.csv
+2025-09-01 23:03:19,372 - INFO - Running: top_products_east_june2017
+2025-09-01 23:03:19,375 - ERROR - Error in top_products_east_june2017 analysis: SQL block 'top_products_east_june2017' not found in D:\Projects\ETL\supermarket_etl_project\sql\olap_queries.sql
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\fact_vente_mart\top_categories_june2017.py", line 15, in run
+    query = extract_sql_block(SQL_DIR / 'olap_queries.sql', 'top_products_east_june2017')
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 50, in extract_sql_block
+    raise ValueError(f"SQL block '{block_name}' not found in {sql_file_path}")
+ValueError: SQL block 'top_products_east_june2017' not found in D:\Projects\ETL\supermarket_etl_project\sql\olap_queries.sql
+2025-09-01 23:04:43,344 - INFO - Running: top_10_sales_by_region
+2025-09-01 23:04:43,591 - INFO - Archived top_sales_by_region_23-03-19.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-03-19_23-04-43.csv
+2025-09-01 23:04:43,595 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-04-43.csv
+2025-09-01 23:04:43,596 - INFO - Analysis completed in 0.25 seconds
+2025-09-01 23:04:43,596 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-04-43.csv
+2025-09-01 23:04:43,597 - INFO - Running analysis module
+2025-09-01 23:04:43,598 - INFO - Extracted SQL query preview:
+SELECT *
+FROM top_10_products_by_quantity;
+2025-09-01 23:04:43,743 - INFO - Archived top_10_products_by_quantity_23-03-19.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-03-19_23-04-43.csv
+2025-09-01 23:04:43,745 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-04-43.csv
+2025-09-01 23:04:43,745 - INFO - Analysis completed in 0.15 seconds
+2025-09-01 23:04:43,745 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-04-43.csv
+2025-09-01 23:04:43,746 - INFO - Running: top_products_east_june2017
+2025-09-01 23:04:43,748 - ERROR - Error in top_products_east_june2017 analysis: SQL block 'top_products_east_june2017' not found in D:\Projects\ETL\supermarket_etl_project\sql\olap_queries.sql
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\fact_vente_mart\top_categories_june2017.py", line 15, in run
+    query = extract_sql_block(SQL_DIR / 'olap_queries.sql', 'top_products_east_june2017')
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 50, in extract_sql_block
+    raise ValueError(f"SQL block '{block_name}' not found in {sql_file_path}")
+ValueError: SQL block 'top_products_east_june2017' not found in D:\Projects\ETL\supermarket_etl_project\sql\olap_queries.sql
+2025-09-01 23:08:20,436 - INFO - Running: top_10_sales_by_region
+2025-09-01 23:08:20,676 - INFO - Archived top_sales_by_region_23-04-43.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-04-43_23-08-20.csv
+2025-09-01 23:08:20,681 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-08-20.csv
+2025-09-01 23:08:20,681 - INFO - Analysis completed in 0.25 seconds
+2025-09-01 23:08:20,681 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_sales_by_region\top_sales_by_region_23-08-20.csv
+2025-09-01 23:08:20,682 - INFO - Running analysis module
+2025-09-01 23:08:20,683 - INFO - Extracted SQL query preview:
+SELECT *
+FROM top_10_products_by_quantity;
+2025-09-01 23:08:20,834 - INFO - Archived top_10_products_by_quantity_23-04-43.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-04-43_23-08-20.csv
+2025-09-01 23:08:20,835 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-08-20.csv
+2025-09-01 23:08:20,836 - INFO - Analysis completed in 0.15 seconds
+2025-09-01 23:08:20,836 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_10_products_by_quantity\top_10_products_by_quantity_23-08-20.csv
+2025-09-01 23:08:20,836 - INFO - Running: top_categories_june2017')
+2025-09-01 23:08:20,946 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_categories_june2017\top_categories_june2017_23-08-20.csv
+2025-09-01 23:08:20,946 - INFO - Analysis completed in 0.11 seconds
+2025-09-01 23:08:20,946 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_categories_june2017\top_categories_june2017_23-08-20.csv
+2025-09-01 23:08:20,947 - INFO - Running: top_products_east_jan2017
+2025-09-01 23:08:21,041 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_products_east_jan2017\top_products_east_jan2017_23-08-21.csv
+2025-09-01 23:08:21,041 - INFO - Analysis completed in 0.09 seconds
+2025-09-01 23:08:21,042 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_products_east_jan2017\top_products_east_jan2017_23-08-21.csv
+2025-09-01 23:08:21,042 - INFO - Running: top_categories_june2017')
+2025-09-01 23:08:21,133 - INFO - Archived top_categories_june2017_23-08-20.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-01\top_categories_june2017\top_categories_june2017_23-08-20_23-08-21.csv
+2025-09-01 23:08:21,134 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_categories_june2017\top_categories_june2017_23-08-21.csv
+2025-09-01 23:08:21,134 - INFO - Analysis completed in 0.09 seconds
+2025-09-01 23:08:21,134 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-01\top_categories_june2017\top_categories_june2017_23-08-21.csv
+2025-09-01 23:08:21,135 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-01 23:08:21,211 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_23-08-21.csv
+2025-09-01 23:08:21,211 - INFO - Analysis completed in 0.08 seconds
+2025-09-01 23:08:21,211 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_23-08-21.csv
+2025-09-01 23:08:21,212 - INFO - Running: top_10_loyal_magasins
+2025-09-01 23:08:21,326 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_23-08-21.csv
+2025-09-01 23:08:21,326 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_23-08-21.csv
+2025-09-01 23:08:21,327 - INFO - Analysis completed in 0.11 seconds
+2025-09-01 23:08:21,327 - INFO - Running: top_loyal_west_h2_2017
+2025-09-01 23:08:21,404 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_loyal_west_h2_2017\top_loyal_west_h2_2017_23-08-21.csv
+2025-09-01 23:08:21,405 - INFO - Analysis completed in 0.08 seconds
+2025-09-01 23:08:21,405 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\top_loyal_west_h2_2017\top_loyal_west_h2_2017_23-08-21.csv
+2025-09-01 23:08:21,406 - INFO - Running: loyalty_march2017
+2025-09-01 23:08:21,476 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\loyalty_march2017\loyalty_march2017_23-08-21.csv
+2025-09-01 23:08:21,476 - INFO - Analysis completed in 0.07 seconds
+2025-09-01 23:08:21,476 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-01\loyalty_march2017\loyalty_march2017_23-08-21.csv
+2025-09-02 08:39:52,161 - INFO - Running: top_10_sales_by_region
+2025-09-02 08:39:52,708 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_sales_by_region\top_sales_by_region_08-39-52.csv
+2025-09-02 08:39:52,709 - INFO - Analysis completed in 0.55 seconds
+2025-09-02 08:39:52,709 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_sales_by_region\top_sales_by_region_08-39-52.csv
+2025-09-02 08:39:52,710 - INFO - Running analysis module
+2025-09-02 08:39:52,711 - INFO - Extracted SQL query preview:
+SELECT *
+FROM top_10_products_by_quantity;
+2025-09-02 08:39:52,913 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_10_products_by_quantity\top_10_products_by_quantity_08-39-52.csv
+2025-09-02 08:39:52,913 - INFO - Analysis completed in 0.20 seconds
+2025-09-02 08:39:52,914 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_10_products_by_quantity\top_10_products_by_quantity_08-39-52.csv
+2025-09-02 08:39:52,914 - INFO - Running: top_categories_june2017')
+2025-09-02 08:39:53,029 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_08-39-53.csv
+2025-09-02 08:39:53,033 - INFO - Analysis completed in 0.12 seconds
+2025-09-02 08:39:53,034 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_08-39-53.csv
+2025-09-02 08:39:53,035 - INFO - Running: top_products_east_jan2017
+2025-09-02 08:39:53,145 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_products_east_jan2017\top_products_east_jan2017_08-39-53.csv
+2025-09-02 08:39:53,145 - INFO - Analysis completed in 0.11 seconds
+2025-09-02 08:39:53,146 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_products_east_jan2017\top_products_east_jan2017_08-39-53.csv
+2025-09-02 08:39:53,147 - INFO - Running: top_categories_june2017')
+2025-09-02 08:39:53,267 - INFO - Archived top_categories_june2017_08-39-53.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_08-39-53_08-39-53.csv
+2025-09-02 08:39:53,269 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_08-39-53.csv
+2025-09-02 08:39:53,269 - INFO - Analysis completed in 0.12 seconds
+2025-09-02 08:39:53,269 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_08-39-53.csv
+2025-09-02 08:39:53,270 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-02 08:39:53,376 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_08-39-53.csv
+2025-09-02 08:39:53,378 - INFO - Analysis completed in 0.11 seconds
+2025-09-02 08:39:53,379 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_08-39-53.csv
+2025-09-02 08:39:53,380 - INFO - Running: top_10_loyal_magasins
+2025-09-02 08:39:53,563 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_08-39-53.csv
+2025-09-02 08:39:53,563 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_08-39-53.csv
+2025-09-02 08:39:53,563 - INFO - Analysis completed in 0.18 seconds
+2025-09-02 08:39:53,564 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 08:39:53,662 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_08-39-53.csv
+2025-09-02 08:39:53,663 - INFO - Analysis completed in 0.10 seconds
+2025-09-02 08:39:53,663 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_08-39-53.csv
+2025-09-02 08:39:53,663 - INFO - Running: loyalty_march2017
+2025-09-02 08:39:53,749 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\loyalty_march2017\loyalty_march2017_08-39-53.csv
+2025-09-02 08:39:53,749 - INFO - Analysis completed in 0.09 seconds
+2025-09-02 08:39:53,749 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\loyalty_march2017\loyalty_march2017_08-39-53.csv
+2025-09-02 21:55:56,828 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 21:55:57,226 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_21-55-57.csv
+2025-09-02 21:55:57,226 - INFO - Analysis completed in 0.40 seconds
+2025-09-02 21:55:57,227 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_21-55-57.csv
+2025-09-02 21:59:19,767 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 21:59:19,980 - INFO - Archived top_loyal_west_h2_2017_21-55-57.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_21-55-57_21-59-19.csv
+2025-09-02 21:59:19,986 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_21-59-19.csv
+2025-09-02 21:59:19,987 - INFO - Analysis completed in 0.22 seconds
+2025-09-02 21:59:19,987 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_21-59-19.csv
+2025-09-02 22:03:04,118 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 22:03:04,334 - INFO - Archived top_loyal_west_h2_2017_21-59-19.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_21-59-19_22-03-04.csv
+2025-09-02 22:03:04,342 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-03-04.csv
+2025-09-02 22:03:04,343 - INFO - Analysis completed in 0.23 seconds
+2025-09-02 22:03:04,343 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-03-04.csv
+2025-09-02 22:06:44,140 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 22:06:44,494 - INFO - Archived top_loyal_west_h2_2017_22-03-04.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-03-04_22-06-44.csv
+2025-09-02 22:06:44,500 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-06-44.csv
+2025-09-02 22:06:44,501 - INFO - Analysis completed in 0.36 seconds
+2025-09-02 22:06:44,501 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-06-44.csv
+2025-09-02 22:08:13,919 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 22:08:14,137 - INFO - Archived top_loyal_west_h2_2017_22-06-44.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-06-44_22-08-14.csv
+2025-09-02 22:08:14,144 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-08-14.csv
+2025-09-02 22:08:14,144 - INFO - Analysis completed in 0.23 seconds
+2025-09-02 22:08:14,144 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-08-14.csv
+2025-09-02 22:12:02,392 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 22:12:02,593 - ERROR - Error in top_loyal_west_h2_2017 analysis: [WinError 32] The process cannot access the file because it is being used by another process: 'D:\\Projects\\ETL\\supermarket_etl_project\\exports\\fact_fidelite_mart\\2025-09-02\\top_loyal_west_h2_2017\\top_loyal_west_h2_2017_22-08-14.csv'
+Traceback (most recent call last):
+  File "C:\Python313\Lib\shutil.py", line 856, in move
+    os.rename(src, real_dst)
+    ~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'D:\\Projects\\ETL\\supermarket_etl_project\\exports\\fact_fidelite_mart\\2025-09-02\\top_loyal_west_h2_2017\\top_loyal_west_h2_2017_22-08-14.csv' -> 'D:\\Projects\\ETL\\supermarket_etl_project\\exports\\archive\\fact_fidelite_mart\\2025-09-02\\top_loyal_west_h2_2017\\top_loyal_west_h2_2017_22-08-14_22-12-02.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\analysis\fact_fidelite_mart\top_loyal_west_h2_2017.py", line 17, in run
+    csv_path = export_data(df, __name__, 'csv')
+  File "D:\Projects\ETL\supermarket_etl_project\scripts\utils\common.py", line 113, in export_data
+    shutil.move(str(file), str(archived_path))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 877, in move
+    os.unlink(src)
+    ~~~~~~~~~^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'D:\\Projects\\ETL\\supermarket_etl_project\\exports\\fact_fidelite_mart\\2025-09-02\\top_loyal_west_h2_2017\\top_loyal_west_h2_2017_22-08-14.csv'
+2025-09-02 22:12:26,987 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 22:12:27,275 - INFO - Archived top_loyal_west_h2_2017_22-08-14.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-08-14_22-12-27.csv
+2025-09-02 22:12:27,280 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-12-27.csv
+2025-09-02 22:12:27,280 - INFO - Analysis completed in 0.29 seconds
+2025-09-02 22:12:27,280 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-12-27.csv
+2025-09-02 22:53:34,854 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 22:53:35,072 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-53-35.csv
+2025-09-02 22:53:35,073 - INFO - Analysis completed in 0.22 seconds
+2025-09-02 22:53:35,073 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-53-35.csv
+2025-09-02 22:53:46,562 - INFO - Running: top_10_sales_by_region
+2025-09-02 22:53:47,120 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_sales_by_region\top_sales_by_region_22-53-47.csv
+2025-09-02 22:53:47,121 - INFO - Analysis completed in 0.56 seconds
+2025-09-02 22:53:47,121 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_sales_by_region\top_sales_by_region_22-53-47.csv
+2025-09-02 22:53:47,122 - INFO - Running analysis module
+2025-09-02 22:53:47,123 - INFO - Extracted SQL query preview:
+SELECT *
+FROM top_10_products_by_quantity;
+2025-09-02 22:53:47,326 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_10_products_by_quantity\top_10_products_by_quantity_22-53-47.csv
+2025-09-02 22:53:47,327 - INFO - Analysis completed in 0.20 seconds
+2025-09-02 22:53:47,327 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_10_products_by_quantity\top_10_products_by_quantity_22-53-47.csv
+2025-09-02 22:53:47,328 - INFO - Running: top_categories_june2017')
+2025-09-02 22:53:47,477 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_22-53-47.csv
+2025-09-02 22:53:47,477 - INFO - Analysis completed in 0.15 seconds
+2025-09-02 22:53:47,478 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_22-53-47.csv
+2025-09-02 22:53:47,479 - INFO - Running: top_products_east_jan2017
+2025-09-02 22:53:47,589 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_products_east_jan2017\top_products_east_jan2017_22-53-47.csv
+2025-09-02 22:53:47,590 - INFO - Analysis completed in 0.11 seconds
+2025-09-02 22:53:47,590 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_products_east_jan2017\top_products_east_jan2017_22-53-47.csv
+2025-09-02 22:53:47,591 - INFO - Running: top_categories_june2017')
+2025-09-02 22:53:47,709 - INFO - Archived top_categories_june2017_22-53-47.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_22-53-47_22-53-47.csv
+2025-09-02 22:53:47,713 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_22-53-47.csv
+2025-09-02 22:53:47,714 - INFO - Analysis completed in 0.12 seconds
+2025-09-02 22:53:47,717 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_22-53-47.csv
+2025-09-02 22:53:47,726 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-02 22:53:48,012 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_22-53-48.csv
+2025-09-02 22:53:48,013 - INFO - Analysis completed in 0.29 seconds
+2025-09-02 22:53:48,014 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_22-53-48.csv
+2025-09-02 22:53:48,014 - INFO - Running: top_10_loyal_magasins
+2025-09-02 22:53:48,325 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_22-53-48.csv
+2025-09-02 22:53:48,326 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_22-53-48.csv
+2025-09-02 22:53:48,326 - INFO - Analysis completed in 0.31 seconds
+2025-09-02 22:53:48,327 - INFO - Running: loyalty_march2017
+2025-09-02 22:53:48,442 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\loyalty_march2017\loyalty_march2017_22-53-48.csv
+2025-09-02 22:53:48,443 - INFO - Analysis completed in 0.12 seconds
+2025-09-02 22:53:48,443 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\loyalty_march2017\loyalty_march2017_22-53-48.csv
+2025-09-02 22:53:48,444 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 22:53:48,677 - INFO - Archived top_loyal_west_h2_2017_22-53-35.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-53-35_22-53-48.csv
+2025-09-02 22:53:48,686 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-53-48.csv
+2025-09-02 22:53:48,692 - INFO - Analysis completed in 0.25 seconds
+2025-09-02 22:53:48,698 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-53-48.csv
+2025-09-02 23:08:18,448 - INFO - Running: top_10_sales_by_region
+2025-09-02 23:08:19,937 - INFO - Archived top_sales_by_region_22-53-47.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-02\top_sales_by_region\top_sales_by_region_22-53-47_23-08-19.csv
+2025-09-02 23:08:19,947 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_sales_by_region\top_sales_by_region_23-08-19.csv
+2025-09-02 23:08:19,970 - INFO - Analysis completed in 1.52 seconds
+2025-09-02 23:08:19,975 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_sales_by_region\top_sales_by_region_23-08-19.csv
+2025-09-02 23:08:19,979 - INFO - Running analysis module
+2025-09-02 23:08:19,984 - INFO - Extracted SQL query preview:
+SELECT *
+FROM top_10_products_by_quantity;
+2025-09-02 23:08:20,719 - INFO - Archived top_10_products_by_quantity_22-53-47.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-02\top_10_products_by_quantity\top_10_products_by_quantity_22-53-47_23-08-20.csv
+2025-09-02 23:08:20,774 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_10_products_by_quantity\top_10_products_by_quantity_23-08-20.csv
+2025-09-02 23:08:20,781 - INFO - Analysis completed in 0.80 seconds
+2025-09-02 23:08:20,795 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_10_products_by_quantity\top_10_products_by_quantity_23-08-20.csv
+2025-09-02 23:08:20,813 - INFO - Running: top_categories_june2017')
+2025-09-02 23:08:21,019 - INFO - Archived top_categories_june2017_22-53-47.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_22-53-47_23-08-21.csv
+2025-09-02 23:08:21,025 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_23-08-21.csv
+2025-09-02 23:08:21,030 - INFO - Analysis completed in 0.22 seconds
+2025-09-02 23:08:21,036 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_23-08-21.csv
+2025-09-02 23:08:21,044 - INFO - Running: top_products_east_jan2017
+2025-09-02 23:08:21,652 - INFO - Archived top_products_east_jan2017_22-53-47.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-02\top_products_east_jan2017\top_products_east_jan2017_22-53-47_23-08-21.csv
+2025-09-02 23:08:21,654 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_products_east_jan2017\top_products_east_jan2017_23-08-21.csv
+2025-09-02 23:08:21,655 - INFO - Analysis completed in 0.61 seconds
+2025-09-02 23:08:21,655 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_products_east_jan2017\top_products_east_jan2017_23-08-21.csv
+2025-09-02 23:08:21,656 - INFO - Running: top_categories_june2017')
+2025-09-02 23:08:21,986 - INFO - Archived top_categories_june2017_23-08-21.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_23-08-21_23-08-21.csv
+2025-09-02 23:08:22,018 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_23-08-21.csv
+2025-09-02 23:08:22,028 - INFO - Analysis completed in 0.37 seconds
+2025-09-02 23:08:22,030 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_vente_mart\2025-09-02\top_categories_june2017\top_categories_june2017_23-08-21.csv
+2025-09-02 23:08:22,031 - INFO - Running: top_loyal_clients_for_magasin_246
+2025-09-02 23:08:22,334 - INFO - Archived most_loyal_to_Hicks_white_22-53-48.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_22-53-48_23-08-22.csv
+2025-09-02 23:08:22,408 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_23-08-22.csv
+2025-09-02 23:08:22,417 - INFO - Analysis completed in 0.39 seconds
+2025-09-02 23:08:22,431 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\most_loyal_to_Hicks_white\most_loyal_to_Hicks_white_23-08-22.csv
+2025-09-02 23:08:22,445 - INFO - Running: top_10_loyal_magasins
+2025-09-02 23:08:23,224 - INFO - Archived top_10_most_magasin_with_loyal_customer_22-53-48.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_22-53-48_23-08-23.csv
+2025-09-02 23:08:23,230 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_23-08-23.csv
+2025-09-02 23:08:23,230 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_10_most_magasin_with_loyal_customer\top_10_most_magasin_with_loyal_customer_23-08-23.csv
+2025-09-02 23:08:23,230 - INFO - Analysis completed in 0.78 seconds
+2025-09-02 23:08:23,231 - INFO - Running: loyalty_march2017
+2025-09-02 23:08:23,838 - INFO - Archived loyalty_march2017_22-53-48.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\loyalty_march2017\loyalty_march2017_22-53-48_23-08-23.csv
+2025-09-02 23:08:23,842 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\loyalty_march2017\loyalty_march2017_23-08-23.csv
+2025-09-02 23:08:23,848 - INFO - Analysis completed in 0.62 seconds
+2025-09-02 23:08:23,853 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\loyalty_march2017\loyalty_march2017_23-08-23.csv
+2025-09-02 23:08:23,855 - INFO - Running: top_loyal_west_h2_2017
+2025-09-02 23:08:24,358 - INFO - Archived top_loyal_west_h2_2017_22-53-48.csv to D:\Projects\ETL\supermarket_etl_project\exports\archive\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_22-53-48_23-08-24.csv
+2025-09-02 23:08:24,398 - INFO - Exported CSV to D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_23-08-24.csv
+2025-09-02 23:08:24,467 - INFO - Analysis completed in 0.61 seconds
+2025-09-02 23:08:24,506 - INFO - CSV exported to: D:\Projects\ETL\supermarket_etl_project\exports\fact_fidelite_mart\2025-09-02\top_loyal_west_h2_2017\top_loyal_west_h2_2017_23-08-24.csv
