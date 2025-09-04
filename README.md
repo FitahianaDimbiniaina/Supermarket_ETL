@@ -18,3 +18,14 @@ A modular ETL pipeline for processing, analyzing, and exporting loyalty and sale
 | +---utils # Helper functions and utilities
 ```
 
+### Populating the `dim_population` table
+
+To populate the `dim_population` table, follow these steps:
+
+1. Open a terminal and navigate to the `scripts` folder:
+```
+cd scripts
+```
+```
+python dim_population
+```
