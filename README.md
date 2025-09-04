@@ -1,52 +1,68 @@
 # 🧠 Loyalty & Sales ETL Pipeline
 
-A modular ETL pipeline for processing, analyzing, and exporting loyalty and sales data across multiple marts and regions. Built for clarity, schema alignment, and frontend-driven control over backend analytics.
+A modular ETL pipeline designed to process, analyze, and export loyalty and sales data across multiple marts and regions. The project emphasizes clarity, schema alignment, and modular scripts, enabling easy integration with frontend tools for analytics.
 
-Requirements
-PostgreSQL must be installed to run this project.
+## Requirements
 
----folder structure---
+- PostgreSQL must be installed to run this project.
+- Python 3.10+ recommended.
+- All Python dependencies can be installed from `requirements.txt`.
+
+## Project Folder Structure
+
 ```
 +---data
-| +---processed # Cleaned or transformed datasets ready for analysis
-| ---raw # Raw, original datasets
+|   +---processed      # Cleaned or transformed datasets ready for analysis
+|   ---raw             # Raw, original datasets
 +---exports
-| +---fact_fidelite_mart # Processed output tables for loyalty analysis
-| ---fact_vente_mart # Processed output tables for sales analysis
+|   +---fact_fidelite_mart  # Processed output tables for loyalty mart analysis
+|   ---fact_vente_mart      # Processed output tables for sales mart analysis
 +---scripts
-| +---analysis
-| | +---fact_fidelite_mart # Analysis scripts for loyalty mart
-| | +---fact_vente_mart # Analysis scripts for sales mart
-| +---dim_population # Scripts for population/dimension tables
-| +---utils # Helper functions and utilities
+|   +---analysis
+|   |   +---fact_fidelite_mart  # Analysis scripts for loyalty mart
+|   |   +---fact_vente_mart     # Analysis scripts for sales mart
+|   +---dim_population          # Scripts to populate dimension tables such as `dim_population`
+|   +---utils                   # Helper functions and utilities used across scripts
 ```
 
-### Populating the `dim_population` table
+## Setup & Populating the `dim_population` Table
 
-To populate the `dim_population` table, follow these steps:
-1. install the necessary library
-```bash
+Follow these steps to set up the project and populate the population dimension table:
+
+1. **Install Python dependencies**  
+```
 pip install -r requirements.txt
 ```
-2. create the database
-  a. navigate to scripts folder if not already in
-```bash
-cs scripts
+
+2. **Create the PostgreSQL database and load initial tables**  
+a. Navigate to the `scripts` folder:
 ```
-  b.Create the database and load the table
-```python
+cd scripts
+```
+b. Run the script to create the database and empty tables:
+```
 python load_to_postgre.py
 ```
-3. Run:
-```bash
-python dim_population
+
+3. **Populate the `dim_population` table**  
 ```
-4. Populate the views sql
-```python
+python dim_population/your_script_name.py
+```
+
+4. **Populate views for analysis**  
+```
 python populate_views.py
 ```
-5. Run your first analysis
-  a. navigate to the root folder and run
-```python
+
+5. **Run your first analysis**  
+Navigate back to the project root folder and execute:
+```
 python main.py
 ```
+
+### Notes & Recommendations
+
+- Ensure PostgreSQL is running and accessible before executing scripts.  
+- All scripts are modular; you can run only the ones you need without executing the entire pipeline.  
+- Raw datasets should be placed in `data/raw`. Processed outputs will appear in `data/processed` or `exports` depending on the script.  
+- The `utils` folder contains reusable functions to avoid code duplication.
