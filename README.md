@@ -2,6 +2,9 @@
 
 A modular ETL pipeline for processing, analyzing, and exporting loyalty and sales data across multiple marts and regions. Built for clarity, schema alignment, and frontend-driven control over backend analytics.
 
+Requirements
+PostgreSQL must be installed to run this project.
+
 ---folder structure---
 ```
 +---data
@@ -21,11 +24,25 @@ A modular ETL pipeline for processing, analyzing, and exporting loyalty and sale
 ### Populating the `dim_population` table
 
 To populate the `dim_population` table, follow these steps:
-
-1. Open a terminal and navigate to the `scripts` folder:
+1. install the needed library
+ ```
+pip install -r requirements.txt
+```
+2. create the database
+  a. navigate to scripts folder if not already in
+```
+cs scripts
+```
+  b.Create the database and load the table
+```python
+python load_to_postgre.py
+```
+4. Open a terminal and navigate to the `scripts` folder:
 ```
 cd scripts
 ```
 ```
 python dim_population
 ```
+
+
