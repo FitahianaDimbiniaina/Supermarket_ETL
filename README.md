@@ -1,68 +1,90 @@
-# 🧠 Loyalty & Sales ETL Pipeline
+Absolutely, Fitahiana. Here's a refined version of your README that balances technical clarity with purpose-driven storytelling. It highlights the pipeline’s value, modularity, and outputs—while keeping setup instructions clean and actionable.
 
-A modular ETL pipeline designed to process, analyze, and export loyalty and sales data across multiple marts and regions. The project emphasizes clarity, schema alignment, and modular scripts, enabling easy integration with frontend tools for analytics.
+🧠 Loyalty & Sales ETL Pipeline
+A modular ETL pipeline designed to process, analyze, and export loyalty and sales data across multiple marts and regions. The project emphasizes clarity, schema alignment, and reusable scripts, enabling seamless integration with frontend tools and dashboards.
 
-## Requirements
+🎯 Purpose
+This pipeline transforms raw transactional data into structured insights to support:
+- Customer loyalty segmentation
+- Sales performance analysis
+- Regional and temporal trend tracking
+It enables data-driven decisions by generating clean, queryable outputs for dashboards, reporting, and further analytics.
 
-- PostgreSQL must be installed to run this project.
-- Python 3.10+ recommended.
-- All Python dependencies can be installed from `requirements.txt`.
+📦 Requirements
+- PostgreSQL (must be installed and running)
+- Python 3.10+ recommended
+- Dependencies listed in requirements.txt
 
-## Project Folder Structure
+📁 Project Structure
+data/
+├── raw/                  # Raw input datasets
+└── processed/            # Cleaned and transformed outputs
 
-```
-+---data
-|   +---processed      # Cleaned or transformed datasets ready for analysis
-|   ---raw             # Raw, original datasets
-+---exports
-|   +---fact_fidelite_mart  # Processed output tables for loyalty mart analysis
-|   ---fact_vente_mart      # Processed output tables for sales mart analysis
-+---scripts
-|   +---analysis
-|   |   +---fact_fidelite_mart  # Analysis scripts for loyalty mart
-|   |   +---fact_vente_mart     # Analysis scripts for sales mart
-|   +---dim_population          # Scripts to populate dimension tables such as `dim_population`
-|   +---utils                   # Helper functions and utilities used across scripts
-```
+exports/
+├── fact_fidelite_mart/   # Loyalty analysis exports
+└── fact_vente_mart/      # Sales analysis export
+scripts/
+├── analysis/
+│   ├── fact_fidelite_mart/   # Loyalty analysis scripts
+│   ├── fact_vente_mart/      # Sales analysis scripts
+│   └── __pycache__/
+├── dim_population/           # Dimension table population scripts
+├── utils/                    # Shared helper functions
+└── __pycache__/
 
-## Setup & Populating the `dim_population` Table
+sql/                          # SQL queries for transformation and export
 
-Follow these steps to set up the project and populate the population dimension table:
-
-1. **Install Python dependencies**  
-```
+⚙️ Setup & Execution
+1. Install Dependencies
+```python
 pip install -r requirements.txt
 ```
 
-2. **Create the PostgreSQL database and load initial tables**  
-a. Navigate to the `scripts` folder:
-```
-cd scripts
-```
-b. Run the script to create the database and empty tables:
-```
+2. Create Database & Load Tables
+```cd scripts```
+```python
 python load_to_postgre.py
 ```
 
-3. **Populate the `dim_population` table**  
-```
-python dim_population/your_script_name.py
+
+3. Populate Dimension Table
+```python
+python dim_population.py
 ```
 
-4. **Populate views for analysis**  
-```
+
+4. Populate Views
+```python
 python populate_views.py
 ```
 
-5. **Run your first analysis**  
-Navigate back to the project root folder and execute:
+5. Run Analysis
 ```
+cd ..
+```
+```python
 python main.py
 ```
 
-### Notes & Recommendations
 
-- Ensure PostgreSQL is running and accessible before executing scripts.  
-- All scripts are modular; you can run only the ones you need without executing the entire pipeline.  
-- Raw datasets should be placed in `data/raw`. Processed outputs will appear in `data/processed` or `exports` depending on the script.  
-- The `utils` folder contains reusable functions to avoid code duplication.
+
+📊 Key Outputs
+- Loyalty segmentation by store, region, and brand
+- Top-performing products by quantity and category
+- Sales breakdowns by geography and time
+- Customer affinity analysis for targeted marketing
+All exports are organized by date for reproducibility and version control.
+
+🧠 Design Principles
+- Modular scripts for flexible execution
+- Clear folder structure for maintainability
+- Hybrid SQL + Python logic for transformation
+- Reusable utilities to reduce code duplication
+
+🛣️ Roadmap
+- [ ] Add unit tests for transformation logic
+- [ ] Integrate Airflow for scheduling
+- [ ] Build interactive dashboard in dashboard/
+
+🤝 Contributing
+Feel free to fork, open issues, or submit pull requests. For questions, reach out via GitHub profile
