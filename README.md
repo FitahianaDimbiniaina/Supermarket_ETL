@@ -14,6 +14,7 @@ It enables data-driven decisions by generating clean, queryable outputs for dash
 - Dependencies listed in requirements.txt
 
 📁 Project Structure
+```folder
 data/
 ├── raw/                  # Raw input datasets
 └── processed/            # Cleaned and transformed outputs
@@ -29,9 +30,7 @@ scripts/
 ├── dim_population/           # Dimension table population scripts
 ├── utils/                    # Shared helper functions
 └── __pycache__/
-
-sql/                          # SQL queries for transformation and export
-
+```
 ⚙️ Setup & Execution
 1. Install Dependencies
 ```python
